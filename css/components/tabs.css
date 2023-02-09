@@ -1,0 +1,21 @@
+/* Your tabs CSS code here */
+.tabs {
+  display: flex;
+}
+
+.tab {
+  color: black;
+  opacity: .3;
+  margin: 0 10px;
+  padding-bottom: 10px;
+}
+
+.tab.active {
+  opacity: 100%;
+  border-bottom: solid 2.5px rgb(85,85,85);
+}
+
+.tab:hover{
+  transition: .3s;
+  opacity: .5;
+}

@@ -1,0 +1,60 @@
+.notification {
+  display: flex;
+  padding: 8px 16px;
+  align-items: center;
+  background-color: white;
+  margin-left: 10px;
+  /* justify-content: space-between; */
+  position: relative;
+  border-bottom: solid 1px lightgrey;
+}
+
+.notification-link {
+  color: #268bd2;
+}
+
+.notification .notification-content {
+  padding: 0 16px;
+  /* line-height: 2px; */
+  /* position: absolute; */
+  flex-grow: row wrap;
+  align-items: stretch;
+}
+
+.notification p {
+  line-height: 20px;
+  margin: 0;
+}
+
+.notification small {
+  font-weight: bold;
+  color: rgb(175, 175, 175);
+  margin-bottom: 5px;
+}
+
+.notification:first-child {
+  margin-top: 16px;
+}
+
+.notification:last-child {
+  border-bottom: none;
+}
+
+.notification-action {
+  padding-left: 30px;
+  position: absolute;
+  right: 10px;
+  font-size: 14px;
+  margin-left: 16px;
+  opacity: 0;
+  color: black;
+
+}
+
+.notification:hover .notification-action{
+  opacity: .5;
+}
+
+.notification:hover .notification-action:hover {
+  opacity: .8;
+}
